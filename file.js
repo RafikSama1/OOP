@@ -51,28 +51,20 @@ class Product {
     }
   }
   
-  // Testing the Classes
-  
-  // Create products
   const product1 = new Product(1, 'Product 1', 10);
   const product2 = new Product(2, 'Product 2', 20);
   const product3 = new Product(3, 'Product 3', 30);
   
-  // Create a shopping cart
   const cart = new ShoppingCart();
   
-  // Add items to the cart
   cart.addItem(product1, 2);
   cart.addItem(product2, 1);
   cart.addItem(product3, 5);
-  cart.addItem(product1, 3); // Add more of product1
+  cart.addItem(product1, 3); 
   
-  // Display the cart
   console.log(cart.displayCartItems());
   
-  // Remove an item from the cart
-  cart.removeItem(2); // Remove product2
+  cart.removeItem(2);
   
-  // Display the cart again
   console.log(cart.displayCartItems());
   
